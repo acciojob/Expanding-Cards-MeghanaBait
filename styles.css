@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+.container{
+	display:flex;
+	gap:20px;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+
+.panel{
+	overflow:hidden;
+	cursor:pointer;
+	transition:all 0.3 ease-in-out;
+	border-radius: 10px;
+}
+
+.panel img{
+	width:100%;
+	transition: transfirm 0.3s ease-in-out;
+}
+
+.panel img:hover{
+	transform: scale(1.1);
+}
+
+.img-text{
+	text-align:center;
+	margin-top:10px;
+	opacity:0;
+	transition:opacity 0.3s ease-in-out;
+}
+
+.panel.active .img-text{
+	opacity:1;
+}

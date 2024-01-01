@@ -1,9 +1,10 @@
 //your JS code here. If required.
-function  togglePanel(panelId) {
-	panels.forEach(panel =>{
-		panel.classlist.remove('active');
-	});
+function togglePanel(panelId) {
+    const panels = document.querySelectorAll('.panel');
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    });
 
-	const clickPanel = document.getElementById(panelId);
-	clickPanel.classList.add("active");
+    const clickedPanel = document.getElementById(panelId);
+    clickedPanel.classList.add('active');
 }
